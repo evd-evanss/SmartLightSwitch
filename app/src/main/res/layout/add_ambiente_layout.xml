@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Novo Cenário"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/cria_cenario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:maxLength="16"
+            android:hint="Digite o nome do cenário..." />
+
+        <EditText
+            android:id="@+id/edt_ip_cenario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:maxLength="3"
+            android:hint="Digite ID do dispositivo..."
+            android:inputType="number" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@color/bggray"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_bulb"
+                android:id="@+id/choose_lamp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="lampada"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Switch
+            android:layout_weight="1"
+
+            android:id="@+id/escolha_dispositivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_plug"
+                android:id="@+id/choose_tomada"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="tomada"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:layout_weight="0.5"
+            android:id="@+id/btn_salvar_cenario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"/>
+        <Button
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:layout_weight="0.5"
+            android:id="@+id/btn_cancel_cenario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar" />
+    </LinearLayout>
+</LinearLayout>

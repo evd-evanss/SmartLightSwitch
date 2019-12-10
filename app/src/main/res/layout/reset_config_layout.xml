@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text=" Você tem certeza que deseja restaurar os padrões de fábrica? Se continuar irá perder todas as configurações salvas para o ID informado"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:id="@+id/edt_rst"
+        android:hint="Digite o ID que deseja resetar"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:layout_weight="0.5"
+            android:id="@+id/btn_continuar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continuar"/>
+        <Button
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:layout_weight="0.5"
+            android:id="@+id/btn_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wbv_rst"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="WebViewLayout">
+
+    </WebView>
+</LinearLayout>

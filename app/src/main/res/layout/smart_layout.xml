@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_voltar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_action_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Switch All"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bulb" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="Acenda ou Apague todas as lâmpadas com um clique"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_acender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:background="#fff"
+                android:text="Acender" />
+
+            <Button
+                android:id="@+id/btn_apagar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:background="#fff"
+                android:text="Apagar" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/wbv1_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout"></WebView>
+
+        <WebView
+            android:id="@+id/wbv2_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout"></WebView>
+
+        <WebView
+            android:id="@+id/wbv3_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout"></WebView>
+
+        <WebView
+            android:id="@+id/wbv4_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout"></WebView>
+
+        <WebView
+            android:id="@+id/wbv5_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout"></WebView>
+
+        <WebView
+            android:id="@+id/wbv6_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout"></WebView>
+
+        <WebView
+            android:id="@+id/wbv7_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout"></WebView>
+
+        <WebView
+            android:id="@+id/wbv8_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout"></WebView>
+
+        <WebView
+            android:id="@+id/wbv9_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout"></WebView>
+
+        <WebView
+            android:id="@+id/wbv10_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout"></WebView>
+
+    </LinearLayout>
+
+</LinearLayout>

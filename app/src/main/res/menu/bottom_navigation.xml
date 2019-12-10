@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Controle"
+        android:titleCondensed="Controle"
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/remoto"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:title="Cadastro"
+        android:titleCondensed="Cenários"
+        android:id="@+id/cadastro"
+        android:enabled="true"
+        android:icon="@drawable/ic_cadastro"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="Dispositivos"
+        android:titleCondensed="Dispositivos"
+        android:id="@+id/dispositivos"
+        android:enabled="true"
+        android:icon="@drawable/ic_devices"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:title="Ajuda"
+        android:titleCondensed="Ajuda"
+        android:id="@+id/ajuda"
+        android:enabled="true"
+        android:icon="@drawable/ic_help"
+        app:showAsAction="never"/>
+
+
+
+
+</menu>

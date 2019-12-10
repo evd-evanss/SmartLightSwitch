@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/bggray"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:stateListAnimator="@animator/anim"
+        android:layout_weight="1"
+        android:id="@+id/btn_email"
+        android:layout_margin="15dp"
+        android:background="#fff"
+        android:text="Gerar Qr Code dos Ambientes"
+        android:textColor="@color/gray_text"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <Button
+        android:stateListAnimator="@animator/anim"
+        android:layout_weight="1"
+        android:id="@+id/btn_import"
+        android:layout_margin="15dp"
+        android:textColor="@color/gray_text"
+        android:background="#fff"
+        android:text="Scanear Qr Code"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btn_link"
+        android:layout_margin="15dp"
+        android:textColor="@color/gray_text"
+        android:background="#fff"
+        android:text="Tutorial de Configuração Wifi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btn_rst"
+        android:layout_margin="15dp"
+        android:textColor="@color/gray_text"
+        android:background="#fff"
+        android:text="Reset Wifi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btn_update"
+        android:layout_margin="15dp"
+        android:textColor="@color/gray_text"
+        android:background="#fff"
+        android:text="Atualizar Módulo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+</LinearLayout>
+
+</FrameLayout>

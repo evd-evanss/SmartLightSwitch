@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:descendantFocusability="blocksDescendants"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bggray"
+    android:id="@+id/view_linha"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/bggray"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/change_icon"
+                    android:src="@drawable/ic_addimage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:text="000"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_nome"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Ambiente"
+                    android:textColor="@color/gray_text"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/altera_cenario"
+                    android:layout_width="31dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btnedt_efect" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageButton
+                    android:focusedByDefault="true"
+                    android:id="@+id/delet_cenario"
+                    android:background="@drawable/btntrash_efect"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</FrameLayout>

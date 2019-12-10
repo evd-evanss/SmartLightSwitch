@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/listAlarm_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/llalarm"
+        android:background="@color/bggray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/imv_addalarm"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_alarm"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:layout_weight="40"
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="left"
+                android:id="@+id/txt_label_alarm"
+                android:text="Programe um horário para alarmar sua lâmpada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
