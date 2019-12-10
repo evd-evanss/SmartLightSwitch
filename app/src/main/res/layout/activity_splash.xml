@@ -30,7 +30,7 @@
         android:layout_marginTop="20dp"
         android:width="5dp"
         android:gravity="center"
-        android:text="Smart Switch"
+        android:text="Smart Light \nSwitch"
         android:textColor="@color/gray_text"
         android:textSize="35sp"
         android:textStyle="bold" />

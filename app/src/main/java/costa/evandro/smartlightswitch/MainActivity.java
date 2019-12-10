@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         //bottomNavigationView.setSelectedItemId(R.id.home);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("Smart Switch");
+        getSupportActionBar().setTitle("Smart Light Switch");
         //getSupportActionBar().setDisplayShowTitleEnabled(true);
         //getSupportActionBar().setLogo(R.drawable.smart_logo);
 
@@ -155,11 +155,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     }
 
-
-    public abstract class UpdateResult {
-        public abstract void updateStatus(Integer status);
-    }
-
     public static void exibirBarra(boolean exibir) {
         mProgressBar.setVisibility(exibir ? View.VISIBLE : View.GONE);
     }
@@ -194,8 +189,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case TELA_CADASTRO:
                 viewPager.setCurrentItem(1);
                 break;
-                case TELA_WIFISETUP:
-                    viewPager.setCurrentItem(2);
+            case TELA_WIFISETUP:
+                viewPager.setCurrentItem(2);
                 break;
             case TELA_AJUDA:
 
@@ -247,7 +242,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Button btn_Voltar = dialog_add.findViewById(R.id.btn_voltar);
         Button btn_Acender = dialog_add.findViewById(R.id.btn_acender);
         Button btn_Apagar = dialog_add.findViewById(R.id.btn_apagar);
-         TextView txtTitle = dialog_add.findViewById(R.id.txtTitle);
+        TextView txtTitle = dialog_add.findViewById(R.id.txtTitle);
 
         //Ao clicar no fora do dialogo a ação será cancelada
         btn_Voltar.setOnClickListener(new View.OnClickListener() {
@@ -334,7 +329,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case 10:
                 swt10 = state;
                 break;
-                case 11:
+            case 11:
                 swt1 = state;
                 swt2 = state;
                 swt3 = state;

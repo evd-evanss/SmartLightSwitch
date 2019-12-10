@@ -1,6 +1,7 @@
 package costa.evandro.smartlightswitch.AssyncTasks;
 
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -11,6 +12,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
+import costa.evandro.smartlightswitch.MyApp;
 import costa.evandro.smartlightswitch.adapter_ambiente.Ambiente;
 import costa.evandro.smartlightswitch.adapter_ambiente.SQLHelper;
 
@@ -93,7 +95,7 @@ public class UrlActionsTask extends AsyncTask<String,Integer,Integer> {
                     publishProgress((int) ((10 / (float) 25) * 100));
                     //Aqui é definida a URL que contém a ação a ser executada pelo módulo wifi
                     URL url = new URL(url_base+ip+action);
-                    HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                    //HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                     publishProgress((int) ((10 / (float) 50) * 100));
                     //Um objeto do tipo InputStream é responsável por receber as informações, abrir a url e fechar
                     InputStream inputStream;
@@ -113,7 +115,7 @@ public class UrlActionsTask extends AsyncTask<String,Integer,Integer> {
 
     @Override
     protected void onPostExecute(Integer args) {
-       // Toast.makeText(MyApp.getmContext(), "Smart Switch Finalizado", Toast.LENGTH_SHORT).show();
+        // Toast.makeText(MyApp.getmContext(), "Smart Switch Finalizado", Toast.LENGTH_SHORT).show();
         exibirBarra(false);
     }
 
