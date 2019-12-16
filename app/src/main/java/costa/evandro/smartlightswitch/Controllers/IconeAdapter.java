@@ -1,4 +1,4 @@
-package costa.evandro.smartlightswitch.adapter_ambiente;
+package costa.evandro.smartlightswitch.Controllers;
 
 
 import android.app.Dialog;
@@ -12,9 +12,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import costa.evandro.smartlightswitch.MainActivity;
+import costa.evandro.smartlightswitch.Models.SQLHelper;
+import costa.evandro.smartlightswitch.Views.MainActivity;
 import costa.evandro.smartlightswitch.R;
-import costa.evandro.smartlightswitch.Utils.Icones;
+import costa.evandro.smartlightswitch.Models.Icones;
 
 
 public class IconeAdapter extends RecyclerView.Adapter {

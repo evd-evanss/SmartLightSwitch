@@ -14,7 +14,7 @@
 
 
     <application
-        android:name=".MyApp"
+        android:name=".Controllers.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_"
         android:label="Smart Light Switch"
@@ -22,7 +22,7 @@
         android:supportsRtl="true"
         android:theme="@style/MyTheme"
         android:fullBackupContent="@xml/backup_descriptor">
-        <activity android:name=".SplashActivity">
+        <activity android:name=".Views.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="on" />
@@ -30,20 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Views.MainActivity" />
 
-        <receiver android:name=".alarme.Alarm_Receiver" />
-
-        <service
-            android:name=".alarme.AlarmeWebService"
-            android:enabled="true"
-            android:exported="false" />
-        <service
-            android:name=".alarme.HelloService"
-            android:enabled="true"
-            android:exported="false" />
-
-        <activity android:name=".ConfigWifiActivity"></activity>
+        <activity android:name=".Views.ConfigWifiActivity"></activity>
     </application>
 
 </manifest>

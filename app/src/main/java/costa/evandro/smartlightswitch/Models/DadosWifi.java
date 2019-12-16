@@ -1,7 +1,7 @@
-package costa.evandro.smartlightswitch.wifimanager;
+package costa.evandro.smartlightswitch.Models;
 
 /**
- * Created by teste on 02/08/2017.
+ * Created by Evandro Costa on 15/07/2017.
  */
 
 public class DadosWifi {

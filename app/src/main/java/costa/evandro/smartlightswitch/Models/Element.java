@@ -1,7 +1,7 @@
-package costa.evandro.smartlightswitch.wifimanager;
+package costa.evandro.smartlightswitch.Models;
 
 /**
- * Created by ADMIN on 1/1/17.
+ * Created by Evandro Costa on 15/07/2017.
  */
 
 public class Element {

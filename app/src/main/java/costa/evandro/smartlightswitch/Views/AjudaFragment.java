@@ -1,4 +1,4 @@
-package costa.evandro.smartlightswitch.fragments;
+package costa.evandro.smartlightswitch.Views;
 
 import android.Manifest;
 import android.app.Activity;
@@ -29,15 +29,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import costa.evandro.smartlightswitch.AssyncTasks.UrlActionsTask;
-import costa.evandro.smartlightswitch.MyApp;
+import costa.evandro.smartlightswitch.Controllers.UrlActionsTask;
+import costa.evandro.smartlightswitch.Controllers.MyApp;
 import costa.evandro.smartlightswitch.R;
-import costa.evandro.smartlightswitch.adapter_ambiente.Ambiente;
-import costa.evandro.smartlightswitch.adapter_ambiente.SQLHelper;
+import costa.evandro.smartlightswitch.Models.Ambiente;
+import costa.evandro.smartlightswitch.Models.SQLHelper;
 
 import static android.app.Activity.RESULT_OK;
-import static costa.evandro.smartlightswitch.MainActivity.update;
-import static costa.evandro.smartlightswitch.MainActivity.url_base;
+import static costa.evandro.smartlightswitch.Views.MainActivity.update;
+import static costa.evandro.smartlightswitch.Views.MainActivity.url_base;
 
 
 /**

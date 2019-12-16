@@ -1,8 +1,10 @@
-package costa.evandro.smartlightswitch;
+package costa.evandro.smartlightswitch.Views;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import costa.evandro.smartlightswitch.R;
 
 public class SplashActivity extends AppCompatActivity {
 

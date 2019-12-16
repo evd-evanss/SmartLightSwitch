@@ -1,4 +1,4 @@
-package costa.evandro.smartlightswitch.fragments;
+package costa.evandro.smartlightswitch.Views;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,12 +15,11 @@ import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 
-import costa.evandro.smartlightswitch.MainActivity;
 import costa.evandro.smartlightswitch.R;
-import costa.evandro.smartlightswitch.adapter_ambiente.ControleAdapter;
-import costa.evandro.smartlightswitch.adapter_ambiente.SQLHelper;
+import costa.evandro.smartlightswitch.Controllers.ControleAdapter;
+import costa.evandro.smartlightswitch.Models.SQLHelper;
 
-import static costa.evandro.smartlightswitch.MainActivity.controleAdapter;
+import static costa.evandro.smartlightswitch.Views.MainActivity.controleAdapter;
 
 
 public class ControleFragment extends Fragment {

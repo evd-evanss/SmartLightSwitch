@@ -1,10 +1,9 @@
-package costa.evandro.smartlightswitch;
-
+package costa.evandro.smartlightswitch.Controllers;
 import android.app.Application;
 import android.content.Context;
 
 /**
- * Created by teste on 01/11/2017.
+ * Created by Evandro Costa on 15/07/2017.
  */
 
 public class MyApp extends Application {

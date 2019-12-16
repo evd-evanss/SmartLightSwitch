@@ -1,4 +1,4 @@
-package costa.evandro.smartlightswitch.Utils;
+package costa.evandro.smartlightswitch.Models;
 
 import costa.evandro.smartlightswitch.R;
 

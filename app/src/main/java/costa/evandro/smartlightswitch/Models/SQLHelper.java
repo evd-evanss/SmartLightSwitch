@@ -1,4 +1,4 @@
-package costa.evandro.smartlightswitch.adapter_ambiente;
+package costa.evandro.smartlightswitch.Models;
 
 import android.app.Activity;
 import android.content.ContentValues;
@@ -9,7 +9,7 @@ import android.util.Log;
 import java.util.ArrayList;
 
 /**
- * Created by trainning on 15/07/2017.
+ * Created by Evandro Costa on 15/07/2017.
  */
 
 

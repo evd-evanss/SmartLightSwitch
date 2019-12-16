@@ -1,8 +1,7 @@
-package costa.evandro.smartlightswitch.adapter_ambiente;
+package costa.evandro.smartlightswitch.Controllers;
 
 
 import android.content.Context;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,16 +11,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import costa.evandro.smartlightswitch.AssyncTasks.UrlActionsTask;
-import costa.evandro.smartlightswitch.MainActivity;
+import costa.evandro.smartlightswitch.Models.Ambiente;
+import costa.evandro.smartlightswitch.Models.SQLHelper;
+import costa.evandro.smartlightswitch.Views.MainActivity;
 import costa.evandro.smartlightswitch.R;
-import costa.evandro.smartlightswitch.Utils.Icones;
-
-import static android.widget.Toast.LENGTH_SHORT;
+import costa.evandro.smartlightswitch.Models.Icones;
 
 
 public class ControleAdapter extends RecyclerView.Adapter {
@@ -115,9 +112,7 @@ public class ControleAdapter extends RecyclerView.Adapter {
             @Override
             public void onClick(View view) {
                 String ip = ambiente.ip;
-                Toast.makeText(ctx, URL_BASE+ip+LIGAR, Toast.LENGTH_LONG).show();
                 if(holder.mSwitch.isChecked()){
-
                     new UrlActionsTask(URL_BASE, LIGAR, ip, 1).execute();
                 }else{
                     new UrlActionsTask(URL_BASE, DESLIGAR, ip, 1).execute();

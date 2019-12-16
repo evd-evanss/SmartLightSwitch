@@ -1,4 +1,4 @@
-package costa.evandro.smartlightswitch.adapter_ambiente;
+package costa.evandro.smartlightswitch.Controllers;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
@@ -28,10 +28,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import costa.evandro.smartlightswitch.ConfigWifiActivity;
+import costa.evandro.smartlightswitch.Views.ConfigWifiActivity;
 import costa.evandro.smartlightswitch.R;
-import costa.evandro.smartlightswitch.wifimanager.DBwifi;
-import costa.evandro.smartlightswitch.wifimanager.Element;
+import costa.evandro.smartlightswitch.Models.DBwifi;
+import costa.evandro.smartlightswitch.Models.Element;
 
 import static android.support.v4.content.ContextCompat.startActivity;
 

@@ -1,15 +1,14 @@
-package costa.evandro.smartlightswitch.adapter_ambiente;
+package costa.evandro.smartlightswitch.Controllers;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 
-import costa.evandro.smartlightswitch.fragments.AjudaFragment;
-import costa.evandro.smartlightswitch.fragments.CadastroFragment;
-import costa.evandro.smartlightswitch.fragments.ControleFragment;
-import costa.evandro.smartlightswitch.fragments.SetupWifiFragment;
+import costa.evandro.smartlightswitch.Views.AjudaFragment;
+import costa.evandro.smartlightswitch.Views.CadastroFragment;
+import costa.evandro.smartlightswitch.Views.ControleFragment;
+import costa.evandro.smartlightswitch.Views.SetupWifiFragment;
 
 /**
  * Created by teste on 17/11/2017.

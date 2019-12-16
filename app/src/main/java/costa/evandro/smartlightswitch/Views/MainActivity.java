@@ -1,13 +1,10 @@
-package costa.evandro.smartlightswitch;
+package costa.evandro.smartlightswitch.Views;
 
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
@@ -24,16 +21,14 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import costa.evandro.smartlightswitch.AssyncTasks.UrlActionsTask;
-import costa.evandro.smartlightswitch.adapter_ambiente.Ambiente;
-import costa.evandro.smartlightswitch.adapter_ambiente.CadastroAdapter;
-import costa.evandro.smartlightswitch.adapter_ambiente.ControleAdapter;
-import costa.evandro.smartlightswitch.adapter_ambiente.SQLHelper;
-import costa.evandro.smartlightswitch.adapter_ambiente.PageAdapter;
-import costa.evandro.smartlightswitch.fragments.AjudaFragment;
-import costa.evandro.smartlightswitch.fragments.CadastroFragment;
-import costa.evandro.smartlightswitch.fragments.ControleFragment;
-import costa.evandro.smartlightswitch.fragments.SetupWifiFragment;
+import costa.evandro.smartlightswitch.Controllers.UrlActionsTask;
+import costa.evandro.smartlightswitch.Models.Ambiente;
+import costa.evandro.smartlightswitch.Controllers.CadastroAdapter;
+import costa.evandro.smartlightswitch.Controllers.ControleAdapter;
+import costa.evandro.smartlightswitch.Models.SQLHelper;
+import costa.evandro.smartlightswitch.Controllers.PageAdapter;
+import costa.evandro.smartlightswitch.Controllers.MyApp;
+import costa.evandro.smartlightswitch.R;
 
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {

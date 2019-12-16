@@ -1,4 +1,4 @@
-package costa.evandro.smartlightswitch.adapter_ambiente;
+package costa.evandro.smartlightswitch.Models;
 
 /**
  * Created por Evandro Ribeiro

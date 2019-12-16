@@ -1,15 +1,11 @@
-package costa.evandro.smartlightswitch;
+package costa.evandro.smartlightswitch.Views;
 
-import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
-import android.os.Build;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -20,9 +16,11 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import costa.evandro.smartlightswitch.Controllers.MyApp;
+import costa.evandro.smartlightswitch.R;
 
 public class ConfigWifiActivity extends AppCompatActivity {
     public String rede_conectada = "";

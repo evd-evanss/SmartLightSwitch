@@ -1,7 +1,6 @@
-package costa.evandro.smartlightswitch.AssyncTasks;
+package costa.evandro.smartlightswitch.Controllers;
 
 import android.os.AsyncTask;
-import android.widget.Toast;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -12,16 +11,15 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-import costa.evandro.smartlightswitch.MyApp;
-import costa.evandro.smartlightswitch.adapter_ambiente.Ambiente;
-import costa.evandro.smartlightswitch.adapter_ambiente.SQLHelper;
+import costa.evandro.smartlightswitch.Models.Ambiente;
+import costa.evandro.smartlightswitch.Models.SQLHelper;
 
-import static costa.evandro.smartlightswitch.MainActivity.change_SWT;
-import static costa.evandro.smartlightswitch.MainActivity.exibirBarra;
-import static costa.evandro.smartlightswitch.MainActivity.exibirProgresso;
+import static costa.evandro.smartlightswitch.Views.MainActivity.change_SWT;
+import static costa.evandro.smartlightswitch.Views.MainActivity.exibirBarra;
+import static costa.evandro.smartlightswitch.Views.MainActivity.exibirProgresso;
 
 /**
- * Created by teste on 15/11/2017.
+ * Created by Evandro Costa on 15/07/2017.
  */
 
 

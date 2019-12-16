@@ -1,4 +1,4 @@
-package costa.evandro.smartlightswitch.fragments;
+package costa.evandro.smartlightswitch.Views;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -15,14 +15,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.Toast;
-import costa.evandro.smartlightswitch.MainActivity;
+
 import costa.evandro.smartlightswitch.R;
-import costa.evandro.smartlightswitch.adapter_ambiente.Ambiente;
-import costa.evandro.smartlightswitch.adapter_ambiente.CadastroAdapter;
-import costa.evandro.smartlightswitch.adapter_ambiente.SQLHelper;
+import costa.evandro.smartlightswitch.Models.Ambiente;
+import costa.evandro.smartlightswitch.Controllers.CadastroAdapter;
+import costa.evandro.smartlightswitch.Models.SQLHelper;
 
 public class CadastroFragment extends Fragment {
     private static CadastroFragment instance;

@@ -1,4 +1,4 @@
-package costa.evandro.smartlightswitch.wifimanager;
+package costa.evandro.smartlightswitch.Models;
 
 import android.app.Activity;
 import android.content.ContentValues;
@@ -9,10 +9,8 @@ import android.util.Log;
 import java.util.ArrayList;
 
 /**
- * Created by trainning on 15/07/2017.
+ * Created by Evandro Costa on 15/07/2017.
  */
-
-
 
 public class DBwifi {
     private static DBwifi instance;
@@ -59,14 +57,8 @@ public class DBwifi {
 
     public void alterarValor(String ssid, String senha) {
 
-        /**
-        id que servirá como identificador, não mudará, e o nome é o nome novo do ambiente
-         */
-        //novos valores
         ContentValues novosValores = new ContentValues();
         novosValores.put("senha", senha);
-
-        //parametros de comparação
         String[] args = new String[]{ssid};
 
         try {
@@ -100,9 +92,6 @@ public class DBwifi {
             do {
                 String senha = myCursor.getString(0);//pega a primeira coluna
                 String ssid = myCursor.getString(1);//segunda
-
-                //int icone = Integer.parseInt(inter);
-
                 data = new DadosWifi(ssid, senha);
 
                 Log.d(TAG, senha);
